@@ -22,6 +22,7 @@ function SignIn() {
             margin: "0 auto",
             minHeight: "100vh",
             alignItems: "center",
+            flexDirection:"column"
           }}
         >
           <LoginSocialFacebook
@@ -36,6 +37,9 @@ function SignIn() {
           >
             <FacebookLoginButton />
           </LoginSocialFacebook>
+          <Button variant="primary"  size="lg" className="mt-5"  onClick={routeChange}>
+            Go To Home
+          </Button>
         </div>
       ) : (
         ""
@@ -60,6 +64,7 @@ function SignIn() {
       ) : (
         ""
       )}
+        
     </div>
   );
 }
