@@ -37,9 +37,9 @@ function SignIn() {
           >
             <FacebookLoginButton />
           </LoginSocialFacebook>
-          <Button variant="primary"  size="lg" className="mt-5"  onClick={routeChange}>
+          {/* <Button variant="primary"  size="lg" className="mt-5"  onClick={routeChange}>
             Go To Home
-          </Button>
+          </Button> */}
         </div>
       ) : (
         ""
