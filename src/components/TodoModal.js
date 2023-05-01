@@ -72,24 +72,24 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
               <h1 className={styles.formTitle}>
                 {type === 'update' ? 'Update Task' : 'Add Task'}
               </h1>
-              <label htmlFor="title" className='d-flex flex-column'>
+              <label htmlFor="title" className="d-flex flex-column">
                 Title
                 <input
                   type="text"
                   id="title"
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
-                  className='d-flex w-100'
+                  className="d-flex w-100"
                 />
               </label>
-              <label htmlFor="status" className='d-flex flex-column'>
+              <label htmlFor="status" className="d-flex flex-column">
                 Status
                 <select
                   name="status"
                   id="status"
                   value={status}
                   onChange={(e) => setStatus(e.target.value)}
-                  className='d-flex w-100'
+                  className="d-flex w-100"
                 >
                   <option value="incomplete">Incomplete</option>
                   <option value="complete">Complete</option>

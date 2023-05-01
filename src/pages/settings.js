@@ -1,9 +1,12 @@
-import Header from "../common";
+import Header from '../common';
 
-function Settings () {
-    return (<>
-       <Header />
-    Settings</>  );
+function Settings() {
+  return (
+    <>
+      <Header />
+      Settings
+    </>
+  );
 }
 
-export default Settings ;
+export default Settings;

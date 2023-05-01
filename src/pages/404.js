@@ -1,9 +1,12 @@
-import Header from "../common";
+import Header from '../common';
 
 function Nofound() {
-    return ( <>
-       <Header />
-    Nofound</> );
+  return (
+    <>
+      <Header />
+      Nofound
+    </>
+  );
 }
 
 export default Nofound;
