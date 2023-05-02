@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Form } from 'react-bootstrap';
 import { Button, SelectButton } from './Button';
 import styles from '../styles/modules/app.module.scss';
 import TodoModal from './TodoModal';
@@ -12,7 +13,6 @@ function AppHeader() {
   const dispatch = useDispatch();
 
   const updateFilter = (e) => {
-    console.log('hello');
     setFilterStatus(e.target.value);
     dispatch(updateFilterStatus(e.target.value));
   };
@@ -29,6 +29,15 @@ function AppHeader() {
         >
           ADD TODO
         </Button>
+        <Form.Control
+          type="text"
+          id="inputPassword5"
+          aria-describedby="passwordHelpBlock"
+          onChange={(e) => updateFilter(e)}
+          size="lg"
+          placeholder="Search By Name"
+          className="w-50 p-3"
+        />
         <SelectButton value={filterStatus} onChange={(e) => updateFilter(e)}>
           <option value="all">All</option>
           <option value="complete">Complete</option>

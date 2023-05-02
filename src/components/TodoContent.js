@@ -14,7 +14,7 @@ function TodoContent() {
     if (filterStatus === 'all') {
       return true;
     }
-    return item.status === filterStatus;
+    return item.title?.toLowerCase().includes(filterStatus.toString().toLowerCase())
   });
 
   return (
