@@ -38,11 +38,11 @@ function AppHeader() {
           placeholder="Search By Name"
           className="w-50 p-3"
         />
-        <SelectButton value={filterStatus} onChange={(e) => updateFilter(e)}>
+        {/* <SelectButton value={filterStatus} onChange={(e) => updateFilter(e)}>
           <option value="all">All</option>
           <option value="complete">Complete</option>
           <option value="incomplete">Incomplete</option>
-        </SelectButton>
+        </SelectButton> */}
       </div>
       <TodoModal modalOpen={modalOpen} setModalOpen={setModalOpen} />
     </div>
