@@ -1,12 +1,7 @@
 import Header from '../common';
 
 function Settings() {
-  return (
-    <>
-      <Header />
-      Settings
-    </>
-  );
+  return <>Settings</>;
 }
 
 export default Settings;

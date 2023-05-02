@@ -10,6 +10,7 @@ import Homepage from './pages/Homepage';
 function App() {
   return (
     <div>
+      <SignIn />
       <Routes>
         <Route path="/" element={<SignIn />} />
         <Route path="home" element={<Homepage />} />
